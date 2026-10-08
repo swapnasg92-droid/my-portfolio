@@ -1,0 +1,1247 @@
+/* ================================
+   BASIC RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   BODY
+================================ */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+
+/* ================================
+   NAVIGATION
+================================ */
+
+header {
+    width: 100%;
+    padding: 25px 8%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: rgba(10, 10, 10, 0.8);
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #00f5d4;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 120px 8% 60px;
+}
+
+
+.hero-content {
+    max-width: 650px;
+}
+
+
+.intro {
+    font-size: 20px;
+    color: #00f5d4;
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+
+.hero h2 {
+    font-size: 30px;
+    color: #bbbbbb;
+}
+
+
+.description {
+    font-size: 18px;
+    color: #aaaaaa;
+    line-height: 1.7;
+    margin: 25px 0;
+    max-width: 600px;
+}
+
+
+/* ================================
+   BUTTONS
+================================ */
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #00f5d4;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+.btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 245, 212, 0.3);
+}
+
+
+.secondary-btn {
+    background: transparent;
+    color: white;
+    border: 1px solid #00f5d4;
+}
+
+
+.secondary-btn:hover {
+    background: #00f5d4;
+    color: black;
+}
+
+
+/* ================================
+   PROFILE IMAGE
+================================ */
+
+.hero-image img {
+    width: 330px;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #00f5d4;
+    box-shadow: 0 0 40px rgba(0, 245, 212, 0.3);
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #777;
+    border-top: 1px solid #222;
+}
+/* ================================
+   ABOUT PAGE
+================================ */
+
+.about-page {
+    padding: 140px 8% 80px;
+    min-height: 100vh;
+}
+
+
+.page-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.page-title p {
+    color: #00f5d4;
+    letter-spacing: 3px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.page-title h1 {
+    font-size: 50px;
+}
+
+
+/* About Content */
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.about-text {
+    max-width: 600px;
+}
+
+
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+
+.about-text p {
+    color: #aaaaaa;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+
+/* Information Boxes */
+
+.about-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 350px;
+}
+
+
+.info-box {
+    padding: 25px;
+    border: 1px solid #222;
+    border-radius: 12px;
+    background: #111;
+    transition: 0.3s;
+}
+
+
+.info-box:hover {
+    border-color: #00f5d4;
+    transform: translateY(-5px);
+}
+
+
+.info-box h3 {
+    color: #00f5d4;
+    margin-bottom: 8px;
+}
+
+
+.info-box p {
+    color: #aaa;
+}
+
+
+/* Education */
+
+.education {
+    margin-top: 100px;
+}
+
+
+.education-card {
+    max-width: 900px;
+    margin: 25px auto;
+    padding: 30px;
+    background: #111;
+    border-left: 3px solid #00f5d4;
+    border-radius: 10px;
+}
+
+
+.education-card h2 {
+    margin-bottom: 10px;
+}
+
+
+.education-card h3 {
+    color: #00f5d4;
+    margin-bottom: 10px;
+}
+
+
+.education-card p {
+    color: #aaa;
+    line-height: 1.6;
+    margin-top: 8px;
+}
+/* ================================
+   SKILLS PAGE
+================================ */
+
+.skills-page {
+    min-height: 100vh;
+    padding: 140px 8% 80px;
+}
+
+
+/* Skills Container */
+
+.skills-container {
+    max-width: 1000px;
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Skill Card */
+
+.skill-card {
+    background: #111;
+
+    border: 1px solid #222;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    transition: 0.3s;
+}
+
+
+.skill-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #00f5d4;
+
+    box-shadow: 0 10px 30px rgba(0, 245, 212, 0.1);
+}
+
+
+/* Skill Name + Percentage */
+
+.skill-header {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 15px;
+}
+
+
+.skill-header h2 {
+    font-size: 20px;
+}
+
+
+.skill-header span {
+    color: #00f5d4;
+
+    font-weight: bold;
+}
+
+
+/* Progress Background */
+
+.progress {
+    width: 100%;
+
+    height: 8px;
+
+    background: #222;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+
+/* Progress Bar */
+
+.progress-bar {
+    height: 100%;
+
+    background: #00f5d4;
+
+    border-radius: 10px;
+}
+
+
+/* Individual Skills */
+
+.progress-bar.html {
+    width: 90%;
+}
+
+
+.progress-bar.css {
+    width: 80%;
+}
+
+
+.progress-bar.javascript {
+    width: 70%;
+}
+
+
+.progress-bar.python {
+    width: 75%;
+}
+
+
+.progress-bar.java {
+    width: 65%;
+}
+
+
+.progress-bar.sql {
+    width: 70%;
+}
+/* ================================
+   PROJECTS PAGE
+================================ */
+
+.projects-page {
+    min-height: 100vh;
+
+    padding: 140px 8% 80px;
+}
+
+
+/* No Projects Section */
+
+.no-projects {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    background: #111;
+
+    border: 1px solid #222;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+
+.no-projects:hover {
+    border-color: #00f5d4;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 15px 40px rgba(0, 245, 212, 0.1);
+}
+
+
+/* Project Icon */
+
+.project-icon {
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #00f5d4;
+
+    color: #000;
+
+    font-size: 30px;
+
+    font-weight: bold;
+}
+
+
+/* Heading */
+
+.no-projects h2 {
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+
+/* Description */
+
+.no-projects p {
+    color: #aaa;
+
+    line-height: 1.7;
+
+    margin-bottom: 10px;
+}
+
+
+/* Button */
+
+.no-projects .btn {
+    margin-top: 25px;
+}
+/* ================================
+   CONTACT PAGE
+================================ */
+.contact-page {
+    min-height: 100vh;
+
+    padding: 140px 8% 80px;
+}
+
+
+/* Contact Container */
+
+.contact-container {
+    max-width: 1000px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 50px;
+}
+
+
+
+
+
+/* Contact Form */
+
+.contact-form {
+    padding: 30px;
+
+    background: #111;
+
+    border: 1px solid #222;
+
+    border-radius: 15px;
+}
+
+
+.contact-form form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+
+    padding: 15px;
+
+    background: #0a0a0a;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: inherit;
+}
+
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #00f5d4;
+}
+
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+
+/* Social Links */
+
+.social-links {
+    text-align: center;
+
+    margin-top: 70px;
+}
+
+
+.social-links h2 {
+    margin-bottom: 20px;
+}
+
+
+.social-btn {
+    display: inline-block;
+
+    margin: 8px;
+
+    padding: 12px 25px;
+
+    border: 1px solid #00f5d4;
+
+    border-radius: 8px;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.social-btn:hover {
+    background: #00f5d4;
+
+    color: black;
+}
+/* ================================
+   MOBILE RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+    /* Navigation */
+
+    header {
+        padding: 20px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+
+    /* Home */
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        gap: 50px;
+        padding: 150px 5% 60px;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+    .hero h2 {
+        font-size: 22px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image img {
+        width: 230px;
+        height: 230px;
+    }
+
+
+    /* Page Titles */
+
+    .page-title h1 {
+        font-size: 40px;
+    }
+
+
+    /* About */
+
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-info {
+        width: 100%;
+    }
+
+
+    /* Skills */
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Projects */
+
+    .no-projects {
+        padding: 40px 20px;
+    }
+
+
+    /* Contact */
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+}
+/* ================================
+   EDUCATION PAGE
+================================ */
+
+.education-page {
+    min-height: 100vh;
+    padding: 140px 8% 80px;
+}
+
+
+/* Page Title */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-title p {
+    color: #00f5d4;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.page-title h1 {
+    font-size: 50px;
+}
+
+
+/* ================================
+   PREMIUM EDUCATION TIMELINE
+================================ */
+
+.education-page {
+    min-height: 100vh;
+    padding: 140px 8% 80px;
+}
+
+
+/* Page Title */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.page-title p {
+    color: #00f5d4;
+    font-size: 14px;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.page-title h1 {
+    font-size: 55px;
+}
+
+
+/* Timeline */
+
+.education-container {
+    max-width: 950px;
+    margin: auto;
+
+    position: relative;
+}
+
+
+/* Vertical Line */
+
+.education-container::before {
+    content: "";
+
+    position: absolute;
+
+    left: 150px;
+
+    top: 0;
+    bottom: 0;
+
+    width: 2px;
+
+    background: #222;
+}
+
+
+/* Education Card */
+
+.education-card {
+    display: flex;
+
+    gap: 45px;
+
+    position: relative;
+
+    margin-bottom: 45px;
+}
+
+
+/* Year */
+
+.education-year {
+    width: 120px;
+
+    padding: 12px 5px;
+
+    height: fit-content;
+
+    text-align: center;
+
+    color: #00f5d4;
+
+    font-weight: bold;
+
+    border: 1px solid #00f5d4;
+
+    border-radius: 8px;
+
+    background: #0a0a0a;
+
+    position: relative;
+
+    z-index: 2;
+}
+
+
+/* Timeline Dot */
+
+.education-card::before {
+    content: "";
+
+    position: absolute;
+
+    left: 143px;
+
+    top: 15px;
+
+    width: 16px;
+    height: 16px;
+
+    background: #00f5d4;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 15px rgba(0, 245, 212, 0.6);
+
+    z-index: 3;
+}
+
+
+/* Content */
+
+.education-content {
+
+    flex: 1;
+
+    padding: 28px;
+
+    background: #111;
+
+    border: 1px solid #222;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+
+/* Hover */
+
+.education-content:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #00f5d4;
+
+    box-shadow:
+        0 10px 35px rgba(0, 245, 212, 0.12);
+}
+
+
+/* Heading */
+
+.education-content h2 {
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+
+/* College / School */
+
+.education-content h3 {
+
+    color: #00f5d4;
+
+    font-size: 17px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Description */
+
+.education-content p {
+
+    color: #aaa;
+
+    line-height: 1.7;
+
+    font-size: 15px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .education-page {
+
+        padding: 120px 6% 60px;
+
+    }
+
+
+    .page-title h1 {
+
+        font-size: 42px;
+
+    }
+
+
+    .education-container::before {
+
+        display: none;
+
+    }
+
+
+    .education-card {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        margin-bottom: 30px;
+
+    }
+
+
+    .education-card::before {
+
+        display: none;
+
+    }
+
+
+    .education-year {
+
+        width: fit-content;
+
+    }
+
+
+    .education-content {
+
+        padding: 22px;
+
+    }
+
+
+    .education-content h2 {
+
+        font-size: 20px;
+
+    }
+
+}
+/* ================================
+   PREMIUM CONTACT PAGE
+================================ */
+
+.contact-page {
+    min-height: 100vh;
+    padding: 140px 8% 80px;
+}
+
+/* Contact Cards Container */
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Contact Card */
+.contact-card {
+    text-align: center;
+    padding: 40px 25px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: #00f5d4;
+    box-shadow: 0 15px 35px rgba(0, 245, 212, 0.12);
+}
+
+/* Icon */
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border: 1px solid #00f5d4;
+    border-radius: 50%;
+}
+
+/* Heading */
+.contact-card h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+/* Details */
+.contact-card p {
+    color: #aaa;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .contact-page {
+        padding: 120px 6% 60px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-card {
+        padding: 30px 20px;
+    }
+}
+/* =========================================
+   CERTIFICATIONS PAGE
+========================================= */
+
+.certifications-header {
+    text-align: center;
+    padding: 140px 20px 60px;
+}
+
+.certifications-header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.certifications-header p {
+    font-size: 17px;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   CERTIFICATIONS
+========================================= */
+
+.certifications-header {
+    text-align: center;
+    padding: 130px 20px 50px;
+}
+
+.certifications-header h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.certifications-header p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+
+/* Certificate Grid */
+
+.certifications {
+    padding: 30px 8% 100px;
+}
+
+.certifications-container {
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+/* Certificate Card */
+
+.certificate-card {
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s ease;
+}
+
+.certificate-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Icon */
+
+.certificate-icon {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+
+/* Title */
+
+.certificate-card h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+
+/* Organization */
+
+.certificate-organization {
+    font-weight: 600;
+}
+
+
+/* Text */
+
+.certificate-card p {
+    line-height: 1.6;
+}
+
+
+/* Year */
+
+.certificate-year {
+    margin: 20px 0;
+}
+
+
+/* Button */
+
+.certificate-button {
+    display: inline-block;
+
+    background: #111111;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.3s ease;
+}
+
+.certificate-button:hover {
+    background: #333333;
+}
